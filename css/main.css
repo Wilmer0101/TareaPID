@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Vey-bringht-blue: #766cf1;
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-image: url("pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: auto;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--Pale-blue);
+}
+
+p {
+  color: var(--Desaturated-blue);
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+button {
+  width: 100%;
+  height: 44px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: var(--Bright-blue);
+  transition: background-color 0.3s ease-in-out;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0px 2.5px 2.2px rgba(0, 0, 0, 0.027),
+    0px 6.1px 5.3px rgba(0, 0, 0, 0.035), 0px 11.5px 10px rgba(0, 0, 0, 0.042),
+    0px 20.5px 17.9px rgba(0, 0, 0, 0.05),
+    0px 38.4px 33.4px rgba(0, 0, 0, 0.064), 0px 92px 80px rgba(0, 0, 0, 0.11);
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--Vey-bringht-blue);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--Vey-bringht-blue);
+}
+
+.card_main_section {
+  height: 1vh;
+}
+.card {
+  width: 320px;
+  margin: auto;
+  margin-top: 60px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+
+  box-shadow: 0px 2.5px 2.2px rgba(0, 0, 0, 0.027),
+    0px 6.1px 5.3px rgba(0, 0, 0, 0.035), 0px 11.5px 10px rgba(0, 0, 0, 0.042),
+    0px 20.5px 17.9px rgba(0, 0, 0, 0.05),
+    0px 38.4px 33.4px rgba(0, 0, 0, 0.064), 0px 92px 80px rgba(0, 0, 0, 0.11);
+}
+
+.card_img img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  align-items: center;
+}
+
+.card_content > * {
+  margin: 14px 0;
+}
+
+.card_price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+}
+
+.styled_link {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  transition: color 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.styled_link:hover {
+  color: black;
+}
+
+.black_text {
+  color: black;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url("pattern-background-desktop.svg");
+  }
+}
